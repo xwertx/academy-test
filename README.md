@@ -20,13 +20,13 @@ How to proceed with tasks:
 
 Test tasks:
 
-1. Please add an age column to the User model - do not change spec tests - all should pass. Tip: you need to change not only the model but also add new registration controller and modify some of the views files.
+1. Please add an age column to the User model - do not change spec tests - all should pass. Tip: you need to change not only the model but also add new registration controller and modify some of the views files. Some useful links: https://github.com/plataformatec/devise#strong-parameters or http://www.peoplecancode.com/tutorials/adding-custom-fields-to-devise 
 2. Please route users page (/users) to /all_users. Try to write a spec (test) for it.
 3. Create completely new resource representing cities with name (eg. London) and short_name (eg. Ld) fields in it (model City, cities_controller.rb etc.). Add simple CRUD for it to the main app (similar to existing one for users). Write simple unit specs for it.
 4. Add city_id as a new field to the users - this task is very similar to the first one.
 5. Add pagination gem to the project - for users or cities (pick one). Suggested one: https://github.com/mislav/will_paginate.
 6. Add few cities to the seed file and make sure it's working when invoking rake db:seed.
-7. Call browser's alert window with current logged-in user's name via Javascript when visits main page (please do that via Coffeescript). 
+7. Call browser's alert window with current logged-in user's name via Javascript when visits main page (please do that via Coffeescript).
 
 Few words about the stack:
 
