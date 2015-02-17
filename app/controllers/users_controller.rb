@@ -10,6 +10,7 @@ class UsersController < ApplicationController
     unless @user == current_user
       redirect_to :back, :alert => "Access denied."
     end
+    @city = City.all
   end
 
 end
