@@ -1,11 +1,11 @@
 class RegistrationsController < Devise::RegistrationsController
 
 	def new
-		@cities = City.all
+		super
 	end
 
 	def edit
-		@cities = City.all
+		super
 	end
  
   private
