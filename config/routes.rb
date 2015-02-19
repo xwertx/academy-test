@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :users
   get '/all_users', to: 'users#index'
   get '/cities' => 'cities#index'
+  
 end
