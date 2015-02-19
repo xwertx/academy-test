@@ -1,0 +1,24 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="cities edit">
+  <h2>Update City</h2>
+
+  <%= form_for(:city, :url => {:action => 'update', :id => @city.id}) do |f| %>
+
+    <table summary="City form fields">
+      <tr>
+        <th>Name</th>
+        <td><%= f.text_field(:cities_name) %></td>
+      </tr>
+      <tr>
+        <th>Short</th>
+        <td><%= f.text_field(:short_name) %></td>
+      </tr>
+    </table>
+
+    <div class="form-buttons">
+      <%= submit_tag("Update City") %>
+    </div>
+
+  <% end %>
+</div>
